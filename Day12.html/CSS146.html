@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .image{
+            width: 500px;
+            height: 500px;
+            border: 2px solid grey;
+            filter: grayscale(100%);
+            transition: filter 2s ease;
+        }
+        .image:hover{
+            filter: none;
+        }
+
+    </style>
+</head>
+<body>
+    <img class="image" src="images/flower.jpg" alt="flower">
+</body>
+</html>

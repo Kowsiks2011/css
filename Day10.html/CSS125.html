@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .item{
+            background-color: greenyellow;
+            color: black;
+            padding: 10px;
+            margin: 10px;
+            border: 2px solid blue;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,1fr);
+            padding: 10px;
+            margin: 50px;
+            gap: 40px;
+            align-items: flex-start;
+            justify-items: first baseline;
+            border: 2px solid red;
+        }
+        .grid-items{
+            border: 2px solid blue;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+
+
+        <div class="grid-items">
+            <div class="item">one</div>
+            <div class="item">Two</div>
+            <div class="item">Three</div>
+            <div class="item">Four</div>
+            <div class="item">Five</div>
+            <div class="item">Six</div>
+        </div>
+
+        <div class="grid-items">
+            <div class="item">one</div>
+            <div class="item">Two</div>
+            <div class="item">Three</div>
+            <div class="item">Four</div>
+            <div class="item">Five</div>
+            <div class="item">Six</div>
+        </div>
+
+        <div class="grid-items">
+            <div class="item">one</div>
+            <div class="item">Two</div>
+            <div class="item">Three</div>
+            <div class="item">Four</div>
+            <div class="item">Five</div>
+            <div class="item">Six</div>
+        </div>
+
+        <div class="grid-items">
+            <div class="item">one</div>
+            <div class="item">Two</div>
+            <div class="item">Three</div>
+            <div class="item">Four</div>
+            <div class="item">Five</div>
+            <div class="item">Six</div>
+        </div>
+
+
+
+
+    </div>
+</body>
+</html>

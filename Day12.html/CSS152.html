@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .carousel{
+            position: relative;
+            width: 100%;
+            height: 100px;
+            overflow: hidden;
+        }
+        .carousel-text{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            animation: fade 15s linear;
+        }
+        .carousel-text:nth-child(1){
+            animation-delay: 0s;
+        }
+        .carousel-text:nth-child(2){
+            animation-delay: 5s;
+        }
+        .carousel-text:nth-child(3){
+            animation-delay: 8s;
+        }
+        @keyframes fade{
+            0%{
+                opacity: 0;
+            }
+            25%{
+                opacity: 1;
+            }
+            50%{
+                opacity: 1;
+            }
+            75%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="carousel">
+        <div class="carousel-text active">
+            <p>First Text</p>
+        </div>
+        <div class="carousel-text">
+            <p>Second Text</p>
+        </div>
+        <div class="carousel-text">
+            <p>Third Text</p>
+        </div>
+    </div>
+</body>
+</html>

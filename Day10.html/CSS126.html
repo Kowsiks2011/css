@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 10px 20px;
+            background-color: yellow;
+            border: 2px solid black;
+            padding: 10px;
+        }
+        h1{
+            background-color: limegreen;
+            border: 2px solid red;
+            padding: 10px;
+        }
+        @media (max-width:600px)
+        {
+            div{
+                grid-template-columns: repeat(2,1fr);
+            }
+            #item:nth-child(3n){
+                grid-column: span 2;
+
+            }
+        }
+
+        @media (max-width:900px)
+        {
+            div{
+                grid-template-columns: repeat(3,1fr);
+            }
+            #item:nth-child(4n){
+                grid-column: span 2;
+
+            }
+            #item:nth-child(5n){
+                grid-column: span 3;
+
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1 id="item">One</h1>
+        <h1 id="item">Two</h1>
+        <h1 id="item">Three</h1>
+        <h1 id="item">Four</h1>
+        <h1 id="item">Five</h1>
+        <h1 id="item">Six</h1>
+        <h1 id="item">Seven</h1>
+        <h1 id="item">Eight</h1>
+        <h1 id="item">Nine</h1>
+        <h1 id="item">Ten</h1>
+        <!-- <h1 id="item">Eleven</h1>
+        <h1 id="item">Twelve</h1>
+        <h1 id="item">Thirteen</h1> -->
+    </div>
+</body>
+</html>
