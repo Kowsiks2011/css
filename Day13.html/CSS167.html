@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 167: Responsive Form</title>
+    <style>
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        input, select {
+            width: 100%;
+            padding: 8px;
+        }
+        
+        @media (min-width: 601px) {
+            .form-row {
+                display: flex;
+                gap: 20px;
+            }
+            .form-group {
+                flex: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div class="form-row">
+            <div class="form-group">
+                <label>First Name</label>
+                <input type="text">
+            </div>
+            <div class="form-group">
+                <label>Last Name</label>
+                <input type="text">
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email">
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

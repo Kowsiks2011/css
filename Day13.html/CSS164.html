@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 164: Orientation Styles</title>
+    <style>
+        body {
+            padding: 20px;
+            transition: all 0.3s;
+        }
+        
+        @media (orientation: portrait) {
+            body { background: #ffe0b2; }
+            h1::after { content: " (Portrait)"; }
+        }
+        
+        @media (orientation: landscape) {
+            body { background: #bbdefb; }
+            h1::after { content: " (Landscape)"; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Device Orientation</h1>
+    <p>Try rotating your device</p>
+</body>
+</html>

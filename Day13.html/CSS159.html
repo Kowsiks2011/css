@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav ul{
+            background-color: green;
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        ul li{
+            list-style-type:none;
+        }
+        @media(max-width:767px)
+        {
+            .nav ul{
+                flex-direction: column;
+            }
+        }
+        @media(min-width:768px)
+        {
+            .nav ul{
+                   flex-direction: row;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Location</li>
+        </ul>
+    </div>
+</body>
+</html>

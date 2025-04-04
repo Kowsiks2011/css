@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 165: Responsive Footer</title>
+    <style>
+        footer {
+            background: #333;
+            color: white;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        @media (min-width: 601px) {
+            footer {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main style="min-height: 300px;">
+        <h1>Page Content</h1>
+    </main>
+    <footer>
+        <div>© 2023 Company</div>
+        <div>Privacy Policy</div>
+        <div>Contact Us</div>
+    </footer>
+</body>
+</html>

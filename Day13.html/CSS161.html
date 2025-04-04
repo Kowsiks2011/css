@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 100vw;
+            height: 100vh;
+        }
+        .cc{
+            background-color: rgb(253, 244, 244);
+            color: black;
+            border: 2px solid black;
+            padding: 10px;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 30px;
+            align-items: center;
+            padding: 10px;  
+        }
+        img{
+            width: 100%;
+        }
+        @media (min-width:0px)
+        {
+            .container{
+                grid-template-columns: 1fr;
+            }
+        }
+        @media (min-width:769px)
+        {
+            .container{
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+        @media(min-width:1000px)
+        {
+            .container{
+                grid-template-columns: repeat(3,1fr);
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+    <div class="cc card1">
+        <img src="burger.jpg" alt="burger">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sint vero id magni vel, porro eos laudantium ab
+            nam aut esse a magnam voluptas labore ratione soluta, molestiae explicabo illo.</p>
+    </div>
+
+    <div class="cc card2">
+        <img src="burger.jpg" alt="burger">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sint vero id magni vel, porro eos laudantium ab
+            nam aut esse a magnam voluptas labore ratione soluta, molestiae explicabo illo.</p>
+    </div>
+
+    <div class="cc card3">
+        <img src="burger.jpg" alt="burger">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sint vero id magni vel, porro eos laudantium ab
+            nam aut esse a magnam voluptas labore ratione soluta, molestiae explicabo illo.</p>
+    </div>
+    </div>
+</body>
+
+</html>

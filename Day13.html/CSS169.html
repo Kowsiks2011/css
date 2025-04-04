@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 169: Nested Media Queries</title>
+    <style>
+        body {
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        
+        /* Tablet Landscape */
+        @media (min-width: 768px) and (orientation: landscape) {
+            body {
+                background: #e8f5e9;
+                font-size: 18px;
+            }
+            h1::after {
+                content: " (Tablet Landscape)";
+                color: #2e7d32;
+            }
+        }
+        
+        /* High-res Desktop */
+        @media (min-width: 1920px) {
+            body {
+                background: #e3f2fd;
+                max-width: 1800px;
+                margin: 0 auto;
+                font-size: 20px;
+            }
+            h1::after {
+                content: " (High-res Desktop)";
+                color: #0d47a1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Advanced Media Queries</h1>
+    <p>This page has special styles for tablet landscape and high-resolution desktop screens.</p>
+</body>
+</html>

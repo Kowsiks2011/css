@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+        }
+        body{
+            display: grid;
+            grid-template-areas: 
+            'head head'
+            'nav main'
+            'nav foot';
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: 200px 1fr 200px;
+        }
+        .head{
+            grid-area: head;
+            background-color:rgb(215, 21, 209);
+        }
+        .nav{
+            grid-area: nav;
+            background-color: red;
+        }
+        .main{
+            grid-area: main;
+            background-color: blue;
+        }
+        .footer{
+            grid-area: foot;
+            background-color: yellow;
+        }
+        @media (max-width:768px)
+        {
+            .nav{
+                visibility: hidden;
+            }
+            /* body{
+                width: 100vw;
+                height: 100vh;
+            } */
+            body{
+                grid-template-areas: 
+                'head'
+                'main'
+                'foot';
+                grid-template-columns: 1fr;
+                grid-template-rows: 200px 1fr 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="head">Header</div>
+    <div class="nav">Navbar</div>
+    <div class="main">Main</div>
+    <div class="footer">Footer</div>
+</body>
+</html>
